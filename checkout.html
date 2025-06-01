@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Printbe</title>
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="./assets/css/custom-style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <style>
+      .header__area {
+        background: #f2f6ff;
+        min-height: 150px;
+      }
+      .product-summary {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        align-items: center;
+      }
+      .product-summary img {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+      <!-- Header Area Start -->
+    <header class="header__area">
+      <div class="header__sticky">
+        <div class="container">
+          <div class="header__area-menubar">
+            <div class="header__area-menubar-left">
+              <div class="header__area-menubar-left-logo">
+                <a href="index.html"
+                  ><img class="dark-n" src="./assets/images/logo.svg" alt=""
+                /></a>
+              </div>
+            </div>
+<span class="clicknav" onclick="openNav()">&#9776;</span>
+            <div class="header__area-menubar-center">
+              <div class="header__area-menubar-center-menu menu-responsive">
+                <ul id="mobilemenu">
+                  <li><a href="index.html">Home </a></li>
+                  <li>
+                    <a href="shop.html">Shop Now </a>
+                  </li>
+                  <li>
+                    <a href="about-us.html">About Us </a>
+                  </li>
+                  <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="header__area-menubar-right">
+              <div class="header__area-menubar-right-box">
+                <div class="header__area-menubar-right-box-btn">
+                  <a
+                    href="cart.html"
+                    class="btn btn-outline-primary position-relative cart_icon"
+                  >
+                    <i class="fa fa-shopping-cart fs-5"></i>
+                     <span
+                      id="cart-count"
+                      class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                      >0</span
+                    >
+                  </a>
+                  <a class="btn-one" href="shop.html"
+                    >Make It Yours<i class="fas fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="responsive-menu_popup-icon sidebar-menu-show-hide">
+                <i class="fas fa-bars"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="shop.html">Shop Now</a>
+  <a href="about-us.html">About Us</a>
+  <a href="contact-us.html">Contact Us</a>
+</div>
+    </header>
+    <!-- Header Area End -->
+
+    <!-- Main content -->
+    <main class="inner_body_area">
+      <div class="container my-5">
+        <form id="checkout-form">
+          <div class="row g-4">
+            <!-- Customer Info -->
+            <div class="col-md-6">
+              <div class="checkout-container">
+                <h4 class="mb-4">Customer Information</h4>
+                <div class="mb-3">
+                  <label class="form-label">Name</label>
+                  <input type="text" class="form-control" required />
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Email</label>
+                  <input type="email" class="form-control" required />
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Phone</label>
+                  <input type="tel" class="form-control" required />
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Address</label>
+                  <textarea class="form-control" rows="3" required></textarea>
+                </div>
+              </div>
+               <!-- Payment Option -->
+         
+              <div class="checkout-container mt-4">
+                <h4 class="mb-4">Payment Method</h4>
+                <div class="form-check mb-3">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="paymentMethod"
+                    id="cod"
+                    value="cod"
+                    checked
+                    required
+                  />
+                  <label class="form-check-label" for="cod">
+                    Cash on Delivery (COD)
+                  </label>
+                </div>
+              </div>
+         
+            </div>
+
+             <!-- Order Summary -->
+            <div class="col-md-6">
+              <div class="checkout-container">
+                <h4 class="mb-4">Order Summary</h4>
+                <div id="summary"></div>
+                <button type="submit" class="btn-one checkout_btn mt-4">
+                  Complete Order
+                </button>
+              </div>
+            </div>
+
+           
+
+           
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <!-- Subscribe section Start -->
+    <section class="subscribe">
+      <div
+        class="subscribe__one"
+        style="background-image: url('assets/images/subscribe-bg1.jpg')"
+      >
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-7 col-lg-8">
+              <div class="subscribe__one-title text-center">
+                <h2>What you wear should <span> speak before you do.</span></h2>
+                <a href="contact-us.html" class="btn-one mx-auto d-table mt-5">
+                  Connect with Us
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Subscribe section End -->
+
+    <!-- Footer Start -->
+    <footer>
+      <div class="footer__one">
+        <div class="container">
+          <div class="footer-wrapper">
+            <div class="footer__one-widget">
+              <div class="footer__one-widget-about">
+                <a href="index.html"
+                  ><img src="assets/images/logo.svg" alt="Printbe Logo"
+                /></a>
+                <p>
+                  At Your TeeBrand, we specialize in high-quality custom
+                  t-shirts designed to help you stand out.
+                </p>
+                <div class="social">
+                  <a href="https://facebook.com" target="_blank"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a href="https://x.com" target="_blank"
+                    ><i class="fa-brands fa-x-twitter"></i
+                  ></a>
+                  <a href="https://behance.net" target="_blank"
+                    ><i class="fab fa-behance"></i
+                  ></a>
+                  <a href="https://linkedin.com" target="_blank"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer__one-widget">
+              <h5>Our Services</h5>
+              <div class="footer__one-widget-solution">
+                <ul>
+                  <li><a href="shop.html">Men's T-Shirts</a></li>
+                  <li><a href="shop.html">Women's T-Shirts</a></li>
+                  <li><a href="shop.html">Custom Orders</a></li>
+                  <li><a href="shop.html">New Arrivals</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="footer__one-widget">
+              <h5>Quick Links</h5>
+              <div class="footer__one-widget-solution">
+                <ul>
+                  <li><a href="about-us.html">About Us</a></li>
+                  <li><a href="shop.html">Shop Now</a></li>
+                  <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="footer__one-widget">
+              <h5>Contact Us</h5>
+              <div class="footer__one-widget-contact-info">
+                <div class="footer__one-widget-contact-info-item">
+                  <div class="footer__one-widget-contact-info-item-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div class="footer__one-widget-contact-info-item-txt">
+                    <span>Email</span>
+                    <a href="mailto:hello@printbe.design"
+                      >hello@printbe.design</a
+                    >
+                  </div>
+                </div>
+                <div class="footer__one-widget-contact-info-item">
+                  <div class="footer__one-widget-contact-info-item-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div class="footer__one-widget-contact-info-item-txt">
+                    <span>Address</span>
+                    <p>101 Creative Avenue, Design City, CA 90001</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="copyright__one">
+          <div class="container">
+            <div
+              class="row justify-content-center copyright__one-container-area"
+            >
+              <div class="copyright__one-left text-center">
+                <p>© 2025 Printbe. All rights reserved.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Products and Checkout Script -->
+     <script src="./assets/js/custom.js"></script>
+    <script src="./assets/js/products.js"></script>
+    <script>
+      const cart = JSON.parse(localStorage.getItem("cart")) || [];
+      const summary = document.getElementById("summary");
+      let total = 0;
+
+      if (!cart.length) {
+        summary.innerHTML = "<p class='text-muted'>Your cart is empty.</p>";
+      } else {
+        cart.forEach((item) => {
+          const product = products.find((p) => p.id === item.id);
+          const subtotal = product.price * item.qty;
+          total += subtotal;
+          summary.innerHTML += `
+            <div class="product-summary">
+              <img src="${product.image}" alt="${product.title}" />
+              <div class="flex-grow-1">
+                <div class="fw-semibold">${product.title}</div>
+                <div class="text-muted small">${product.category}</div>
+                <div class="text-muted">Quantity: ${item.qty}</div>
+              </div>
+              <div class="fw-bold text-end">$${subtotal.toFixed(2)}</div>
+            </div>
+          `;
+        });
+
+        summary.innerHTML += `
+          <div class="d-flex justify-content-between pt-3 ttl_ctn">
+            <strong>Total:</strong>
+            <strong>$${total.toFixed(2)}</strong>
+          </div>
+        `;
+      }
+
+      document.getElementById("checkout-form").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const selectedPayment = document.querySelector('input[name="paymentMethod"]:checked').value;
+        console.log("Selected Payment Method:", selectedPayment);
+
+        localStorage.removeItem("cart");
+        window.location.href = "thankyou.html";
+      });
+
+      function updateCartCount() {
+        const count = cart.reduce((sum, item) => sum + item.qty, 0);
+        document.getElementById("cart-count").textContent = count;
+      }
+      updateCartCount();
+    </script>
+  </body>
+</html>

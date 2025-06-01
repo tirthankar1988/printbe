@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Printbe</title>
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/custom-style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+
+  <body>
+    <!-- Header Area Start -->
+    <header class="header__area">
+      <div class="header__sticky">
+        <div class="container">
+          <div class="header__area-menubar">
+            <div class="header__area-menubar-left">
+              <div class="header__area-menubar-left-logo">
+                <a href="index.html"
+                  ><img class="dark-n" src="./assets/images/logo.svg" alt=""
+                /></a>
+              </div>
+            </div>
+<span class="clicknav" onclick="openNav()">&#9776;</span>
+            <div class="header__area-menubar-center">
+              <div class="header__area-menubar-center-menu menu-responsive">
+                <ul id="mobilemenu">
+                  <li class="active"><a href="index.html">Home </a></li>
+                  <li>
+                    <a href="shop.html">Shop Now </a>
+                  </li>
+                  <li>
+                    <a href="about-us.html">About Us </a>
+                  </li>
+                  <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="header__area-menubar-right">
+              <div class="header__area-menubar-right-box">
+                <div class="header__area-menubar-right-box-btn">
+                  <a
+                    href="cart.html"
+                    class="btn btn-outline-primary position-relative cart_icon"
+                  >
+                    <i class="fa fa-shopping-cart fs-5"></i>
+                     <span
+                      id="cart-count"
+                      class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                      >0</span
+                    >
+                  </a>
+                  <a class="btn-one" href="shop.html"
+                    >Make It Yours<i class="fas fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="responsive-menu_popup-icon sidebar-menu-show-hide">
+                <i class="fas fa-bars"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="shop.html">Shop Now</a>
+  <a href="about-us.html">About Us</a>
+  <a href="contact-us.html">Contact Us</a>
+</div>
+    </header>
+    <!-- Header Area End -->
+    <!-- Banner Area Start -->
+    <section class="banner__one">
+      <div class="container">
+        <div class="row align-items-center gy-4 justify-content-center">
+          <div class="col-xl-7 col-lg-7">
+            <div class="banner__one-content text-left">
+              <span class="subtitle-one">Transforming Experiences</span>
+              <h1>
+                The leader in quality custom
+                <span class="highlighted">T-Shirts.</span>
+              </h1>
+              <p>
+                Turn your ideas into premium products that leave a lasting
+                impression. Ideal for creators and online businesses who hate
+                complexity but want results.
+              </p>
+              <div class="banner__one-content-bottom">
+                <a href="shop.html" class="btn-one hero-buttn">
+                  Shop Now
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-5 col-lg-5 col-md-9 text-end">
+            <div class="banner__one-image">
+              <img
+                class="image-wrapper"
+                src="assets/images/home-banner.png"
+                alt="hero banner"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Banner Area End -->
+
+    <!-- About Section start -->
+    <section class="about">
+      <div class="about__one section-padding">
+        <div class="container">
+          <div class="row align-items-center flex-wrap-reverse gy-4 abt_sec">
+            <div class="col-xl-6 col-lg-6 col-md-8">
+              <div class="about__one-image">
+                <img src="assets/images/about.png" alt="about us" />
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-9 px-5">
+              <div class="about__one-content">
+                <span class="subtitle-one">Let’s get printing</span>
+                <h2>Sell print on <span>demand</span> products worldwide</h2>
+                <p>
+                  We have all the equipment, know-how and every thing you will
+                  need to receive fast, reliable printing services with high
+                  quality results. Chat live with us today to get things moving.
+                </p>
+                <div class="about__one-content-service">
+                  <div class="about__one-content-service-single">
+                    <div class="service-top">
+                      <i class="fas fa-check-circle"></i>
+                      <h6>
+                        Turn digital images into physical products with Printes
+                      </h6>
+                    </div>
+                    <p>– print locally, scale globally.</p>
+                  </div>
+                  <div class="about__one-content-service-single">
+                    <div class="service-top">
+                      <i class="fas fa-check-circle"></i>
+                      <h6>print locally, scale globally.</h6>
+                    </div>
+                    <p>– 500,000+ customisable products</p>
+                    <p>– Local printing and global dropshipping</p>
+                  </div>
+                </div>
+                <a href="shop.html" class="btn-one">
+                  See Our Products
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section end -->
+    <!-- partner slider strip start -->
+    <section class="horizontal-scroll">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="horizontal-scroll-slider">
+            <div class="horizontal-scroll-single-item">
+              <div class="horizontal-scroll-icon">
+                <i class="fas fa-star"></i>
+              </div>
+              <h3>Free delivery worldwide</h3>
+              <div class="horizontal-scroll-icon">
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <div class="horizontal-scroll-single-item">
+              <div class="horizontal-scroll-icon">
+                <i class="fas fa-star"></i>
+              </div>
+              <h3>30 day online returns</h3>
+              <div class="horizontal-scroll-icon">
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <div class="horizontal-scroll-single-item">
+              <div class="horizontal-scroll-icon">
+                <i class="fas fa-star"></i>
+              </div>
+              <h3>Top-notch support</h3>
+              <div class="horizontal-scroll-icon">
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <div class="horizontal-scroll-single-item">
+              <div class="horizontal-scroll-icon">
+                <i class="fas fa-star"></i>
+              </div>
+              <h3>Low price guarantee</h3>
+              <div class="horizontal-scroll-icon">
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <div class="horizontal-scroll-single-item">
+              <div class="horizontal-scroll-icon">
+                <i class="fas fa-star"></i>
+              </div>
+              <h3>Free delivery worldwide</h3>
+              <div class="horizontal-scroll-icon">
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <div class="horizontal-scroll-single-item">
+              <div class="horizontal-scroll-icon">
+                <i class="fas fa-star"></i>
+              </div>
+              <h3>30 day online returns</h3>
+              <div class="horizontal-scroll-icon">
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <div class="horizontal-scroll-single-item">
+              <div class="horizontal-scroll-icon">
+                <i class="fas fa-star"></i>
+              </div>
+              <h3>Top-notch support</h3>
+              <div class="horizontal-scroll-icon">
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <div class="horizontal-scroll-single-item">
+              <div class="horizontal-scroll-icon">
+                <i class="fas fa-star"></i>
+              </div>
+              <h3>Low price guarantee</h3>
+              <div class="horizontal-scroll-icon">
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- partner slider strip end -->
+    <!-- pricing section start -->
+    <section class="pricing">
+      <div class="container">
+        <div class="services-section-title text-center mb-50 design-plans">
+          <span class="subtitle-one m-auto">Choose Tshirts</span>
+          <h2>Best <span>T-Shirt </span> Design For You</h2>
+          <p class="sub-hd mt-4">
+            We have all the equipment, know-how and every thing you will need to
+            receive fast.
+          </p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="plan_cards">
+          <div class="swiper shop-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card">
+                  <a href="product-details.html?id=1">
+                    <img
+                      src="assets/images/coca-cola_t-shirt.jpg"
+                      class="card-img-top"
+                      alt="Cocacola Tshirt"
+                    />
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                        <p class="small">T shirt</p>
+                        <p class="small text-danger"><s>$100.00</s></p>
+                      </div>
+                      <div class="d-flex justify-content-between mb-3">
+                        <h5 class="mb-0">Cocacola T shirt</h5>
+                        <h5 class="text-dark mb-0">$25.00</h5>
+                      </div>
+                      <div class="d-flex justify-content-between mb-2">
+                        <p class="text-muted mb-0">
+                          Available: <span class="fw-bold">6</span>
+                        </p>
+                        <div class="ms-auto text-warning">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                      </div>
+                      <span class="btn-one">Shop Now</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <a href="product-details.html?id=2">
+                    <img
+                      src="assets/images/t-shirt_with_all_over_christmas.jpg"
+                      class="card-img-top"
+                      alt="Tshirt"
+                    />
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                        <p class="small">T shirt</p>
+                        <p class="small text-danger"><s>$150.00</s></p>
+                      </div>
+                      <div class="d-flex justify-content-between mb-3">
+                        <h5 class="mb-0">Christmas T shirt</h5>
+                        <h5 class="text-dark mb-0">$30.00</h5>
+                      </div>
+                      <div class="d-flex justify-content-between mb-2">
+                        <p class="text-muted mb-0">
+                          Available: <span class="fw-bold">2</span>
+                        </p>
+                        <div class="ms-auto text-warning">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                      </div>
+                      <span class="btn-one">Shop Now</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <a href="product-details.html?id=3">
+                    <img
+                      src="assets/images/ghostbusters_t-shirt.jpg"
+                      class="card-img-top"
+                      alt="Tshirt"
+                    />
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                        <p class="small">T shirt</p>
+                        <p class="small text-danger"><s>$130.00</s></p>
+                      </div>
+                      <div class="d-flex justify-content-between mb-3">
+                        <h5 class="mb-0">Ghost T shirt</h5>
+                        <h5 class="text-dark mb-0">$30.00</h5>
+                      </div>
+                      <div class="d-flex justify-content-between mb-2">
+                        <p class="text-muted mb-0">
+                          Available: <span class="fw-bold">8</span>
+                        </p>
+                        <div class="ms-auto text-warning">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                      </div>
+                      <span class="btn-one">Shop Now</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <a href="product-details.html?id=4">
+                    <img
+                      src="assets/images/fanta_logo_t-shirt.jpg"
+                      class="card-img-top"
+                      alt="Tshirt"
+                    />
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                        <p class="small">T shirt</p>
+                        <p class="small text-danger"><s>$100.00</s></p>
+                      </div>
+                      <div class="d-flex justify-content-between mb-3">
+                        <h5 class="mb-0">Fanta T shirt</h5>
+                        <h5 class="text-dark mb-0">$20.00</h5>
+                      </div>
+                      <div class="d-flex justify-content-between mb-2">
+                        <p class="text-muted mb-0">
+                          Available: <span class="fw-bold">1</span>
+                        </p>
+                        <div class="ms-auto text-warning">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                      </div>
+                      <span class="btn-one">Shop Now</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <a href="product-details.html?id=2">
+                    <img
+                      src="assets/images/t-shirt_with_all_over_christmas.jpg"
+                      class="card-img-top"
+                      alt="Tshirt"
+                    />
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                        <p class="small">T shirt</p>
+                        <p class="small text-danger"><s>$150.00</s></p>
+                      </div>
+                      <div class="d-flex justify-content-between mb-3">
+                        <h5 class="mb-0">Christmas T shirt</h5>
+                        <h5 class="text-dark mb-0">$30.00</h5>
+                      </div>
+                      <div class="d-flex justify-content-between mb-2">
+                        <p class="text-muted mb-0">
+                          Available: <span class="fw-bold">2</span>
+                        </p>
+                        <div class="ms-auto text-warning">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                      </div>
+                      <span class="btn-one">Shop Now</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="slider__controls">
+              <div class="slider__pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- pricing section end -->
+
+    <!-- Video Section start -->
+    <section class="video_sec">
+      <div class="video__one">
+        <div class="container transform_brands">
+          <div class="row justify-content-center text-center">
+            <div class="col-xl-9">
+              <h2>Ready to create some custom products?</h2>
+            </div>
+          </div>
+          <a
+            href="shop.html"
+            class="btn-one mx-auto d-table mt-5 dark_single_btn"
+          >
+            Explore More
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Video Section End -->
+
+    <!-- Services Section start -->
+    <section class="services section-padding">
+      <div class="container">
+        <div class="services-section-title text-center mb-50 special-services">
+          <span class="subtitle-one m-auto">Crafting Seamless Experiences</span>
+          <h2>
+            How you can fulfill <br />
+            <span>your ideas</span> with Printbe
+          </h2>
+          <p class="sub-hd">
+            We have all the equipment, know-how and every thing you will need to
+            receive fast, reliable printing services with high quality results.
+          </p>
+        </div>
+        <div class="swiper services-swiper">
+          <div class="swiper-wrapper">
+            <div class="services__one-service-card swiper-slide">
+              <div class="services__one-service-card-icon">
+                <img src="assets/images/col-1.jpg" alt="" />
+              </div>
+              <h5 class="box-hd">Pick your product</h5>
+              <p>
+                From t-shirts to totes, select from our large range of
+                high-quality clothing and accessories to print your design on.
+              </p>
+            </div>
+            <div class="services__one-service-card swiper-slide">
+              <div class="services__one-service-card-icon">
+                <img src="assets/images/col-2.jpg" alt="" />
+              </div>
+              <h5 class="box-hd">Create your design</h5>
+              <p>
+                Our free online design tool makes creating simple. Choose from
+                hundreds of fonts, premade designs, upload your or import photos
+              </p>
+            </div>
+            <div class="services__one-service-card swiper-slide">
+              <div class="services__one-service-card-icon">
+                <img src="assets/images/col-3.jpg" alt="" />
+              </div>
+              <h5 class="box-hd">Leave the rest to us</h5>
+              <p>
+                Once your masterpiece is complete, simply place your order. Your
+                expertly printed item will arrive so quickly you’ll wonder how
+                we do it
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services Section End -->
+    <!-- partner slider strip start -->
+    <section class="horizontal-scroll blue_bg">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="horizontal-scroll-slider">
+            <div class="horizontal-scroll-single-item">
+              <div class="horizontal-scroll-icon">
+                <i class="fas fa-star"></i>
+              </div>
+              <h3>Free delivery worldwide</h3>
+              <div class="horizontal-scroll-icon">
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <div class="horizontal-scroll-single-item">
+              <div class="horizontal-scroll-icon">
+                <i class="fas fa-star"></i>
+              </div>
+              <h3>30 day online returns</h3>
+              <div class="horizontal-scroll-icon">
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <div class="horizontal-scroll-single-item">
+              <div class="horizontal-scroll-icon">
+                <i class="fas fa-star"></i>
+              </div>
+              <h3>Top-notch support</h3>
+              <div class="horizontal-scroll-icon">
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <div class="horizontal-scroll-single-item">
+              <div class="horizontal-scroll-icon">
+                <i class="fas fa-star"></i>
+              </div>
+              <h3>Low price guarantee</h3>
+              <div class="horizontal-scroll-icon">
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <div class="horizontal-scroll-single-item">
+              <div class="horizontal-scroll-icon">
+                <i class="fas fa-star"></i>
+              </div>
+              <h3>Free delivery worldwide</h3>
+              <div class="horizontal-scroll-icon">
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <div class="horizontal-scroll-single-item">
+              <div class="horizontal-scroll-icon">
+                <i class="fas fa-star"></i>
+              </div>
+              <h3>30 day online returns</h3>
+              <div class="horizontal-scroll-icon">
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <div class="horizontal-scroll-single-item">
+              <div class="horizontal-scroll-icon">
+                <i class="fas fa-star"></i>
+              </div>
+              <h3>Top-notch support</h3>
+              <div class="horizontal-scroll-icon">
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <div class="horizontal-scroll-single-item">
+              <div class="horizontal-scroll-icon">
+                <i class="fas fa-star"></i>
+              </div>
+              <h3>Low price guarantee</h3>
+              <div class="horizontal-scroll-icon">
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- partner slider strip end -->
+    <!-- testimonial section start -->
+    <section class="testimonial-faq-counter__wrapper pt-100 pb-100">
+      <div class="container">
+        <div class="row gy-4 justify-content-center">
+          <div class="col-xl-12 col-lg-12 col-md-12">
+            <!-- FAQ Area Start -->
+            <div class="faq__one-content mb-40">
+              <span class="subtitle-one">Testimonial</span>
+              <h2>
+                Feel Good, <span>Look Good</span> <br />See What They’re Saying
+              </h2>
+            </div>
+            <div class="faq__one">
+              <div class="testimonial__one">
+                <div class="swiper testimonial__one-slider-active">
+                  <div class="swiper-wrapper">
+                    <div class="testimonial__one-single-slider swiper-slide">
+                      <div class="slider-quote">
+                        <img src="assets/images/client1.webp" alt="client 1" />
+                      </div>
+                      <div class="testimonial__one-single-slider-user">
+                        <div class="testimonial__one-single-slider-user-name">
+                          <h4>Michael Ramirez</h4>
+                          <span>CEO Founder</span>
+                        </div>
+                        <div class="testimonial__one-single-slider-user-rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star not-rated"></i>
+                        </div>
+                      </div>
+                      <p>
+                        The custom t-shirts we ordered were a hit at our company
+                        event. The fabric was soft, the print quality was
+                        amazing, and everything arrived on time. Will definitely
+                        order again!
+                      </p>
+                    </div>
+
+                    <div class="testimonial__one-single-slider swiper-slide">
+                      <div class="slider-quote">
+                        <img src="assets/images/client2.png" alt="client 2" />
+                      </div>
+                      <div class="testimonial__one-single-slider-user">
+                        <div class="testimonial__one-single-slider-user-name">
+                          <h4>Sarah M.</h4>
+                          <span>Team Coach</span>
+                        </div>
+                        <div class="testimonial__one-single-slider-user-rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star not-rated"></i>
+                        </div>
+                      </div>
+                      <p>
+                        We needed matching shirts for our sports team and these
+                        guys delivered exactly what we wanted. Great
+                        communication and fast turnaround!
+                      </p>
+                    </div>
+                    <div class="testimonial__one-single-slider swiper-slide">
+                      <div class="slider-quote">
+                        <img src="assets/images/client1.webp" alt="client 1" />
+                      </div>
+                      <div class="testimonial__one-single-slider-user">
+                        <div class="testimonial__one-single-slider-user-name">
+                          <h4>Michael Ramirez</h4>
+                          <span>CEO Founder</span>
+                        </div>
+                        <div class="testimonial__one-single-slider-user-rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star not-rated"></i>
+                        </div>
+                      </div>
+                      <p>
+                        The custom t-shirts we ordered were a hit at our company
+                        event. The fabric was soft, the print quality was
+                        amazing, and everything arrived on time. Will definitely
+                        order again!
+                      </p>
+                    </div>
+
+                    <div class="testimonial__one-single-slider swiper-slide">
+                      <div class="slider-quote">
+                        <img src="assets/images/client2.png" alt="client 2" />
+                      </div>
+                      <div class="testimonial__one-single-slider-user">
+                        <div class="testimonial__one-single-slider-user-name">
+                          <h4>Sarah M.</h4>
+                          <span>Team Coach</span>
+                        </div>
+                        <div class="testimonial__one-single-slider-user-rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star not-rated"></i>
+                        </div>
+                      </div>
+                      <p>
+                        We needed matching shirts for our sports team and these
+                        guys delivered exactly what we wanted. Great
+                        communication and fast turnaround!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="slider__controls">
+                    <div class="slider__pagination"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- testimonial section end -->
+    <!-- Subscribe section Start -->
+    <section class="subscribe">
+      <div
+        class="subscribe__one"
+        style="background-image: url('assets/images/subscribe-bg1.jpg')"
+      >
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-7 col-lg-8">
+              <div class="subscribe__one-title text-center">
+                <h2>What you wear should <span> speak before you do.</span></h2>
+                <a href="contact-us.html" class="btn-one mx-auto d-table mt-5">
+                  Connect with Us
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Subscribe section End -->
+    <!-- Footer Start -->
+    <footer>
+      <div class="footer__one">
+        <div class="container">
+          <div class="footer-wrapper">
+            <!-- About Section -->
+            <div class="footer__one-widget">
+              <div class="footer__one-widget-about">
+                <a href="index.html"
+                  ><img src="assets/images/logo.svg" alt="Printbe Logo"
+                /></a>
+                <p>
+                  At Your TeeBrand, we specialize in high-quality custom
+                  t-shirts designed to help you stand out.
+                </p>
+                <div class="social">
+                  <a href="https://facebook.com" target="_blank"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a href="https://x.com" target="_blank"
+                    ><i class="fa-brands fa-x-twitter"></i
+                  ></a>
+                  <a href="https://behance.net" target="_blank"
+                    ><i class="fab fa-behance"></i
+                  ></a>
+                  <a href="https://linkedin.com" target="_blank"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Services -->
+            <div class="footer__one-widget">
+              <h5>Our Services</h5>
+              <div class="footer__one-widget-solution">
+                <ul>
+                  <li><a href="shop.html">Men's T-Shirts</a></li>
+                  <li><a href="shop.html">Women's T-Shirts</a></li>
+                  <li><a href="shop.html">Custom Orders</a></li>
+                  <li><a href="shop.html">New Arrivals</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer__one-widget">
+              <h5>Quick Links</h5>
+              <div class="footer__one-widget-solution">
+                <ul>
+                  <li><a href="about-us.html">About Us</a></li>
+                  <li><a href="shop.html">Shop Now</a></li>
+                  <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer__one-widget">
+              <h5>Contact Us</h5>
+              <div class="footer__one-widget-contact-info">
+                <div class="footer__one-widget-contact-info-item">
+                  <div class="footer__one-widget-contact-info-item-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div class="footer__one-widget-contact-info-item-txt">
+                    <span>Email</span>
+                    <a href="mailto:hello@printbe.design"
+                      >hello@printbe.design</a
+                    >
+                  </div>
+                </div>
+                <div class="footer__one-widget-contact-info-item">
+                  <div class="footer__one-widget-contact-info-item-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div class="footer__one-widget-contact-info-item-txt">
+                    <span>Address</span>
+                    <p>101 Creative Avenue, Design City, CA 90001</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright__one">
+          <div class="container">
+            <div
+              class="row justify-content-center copyright__one-container-area"
+            >
+              <div class="copyright__one-left text-center">
+                <p>© 2025 Printbe. All rights reserved.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- JS -->
+     <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+      function getCart() {
+      try {
+      const cart = JSON.parse(localStorage.getItem("cart"));
+      if (Array.isArray(cart)) return cart;
+      } catch {}
+      return [];
+      }
+
+      function updateCartCount() {
+      const cart = getCart();
+      const totalCount = cart.reduce((sum, item) => sum + item.qty, 0);
+      const cartCountEl = document.getElementById("cart-count");
+      if (cartCountEl) cartCountEl.textContent = totalCount;
+      }
+      // Update cart count on page load
+      window.addEventListener("DOMContentLoaded", updateCartCount);
+      function addToCart(plan, price, selectId) {
+        const qty = document.getElementById(selectId).value;
+        const order = {
+          plan,
+          price,
+          qty,
+        };
+        localStorage.setItem("cart", JSON.stringify(order));
+        window.location.href = "cart.html";
+      }
+    </script>
+  </body>
+</html>

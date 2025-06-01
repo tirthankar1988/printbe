@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Printbe</title>
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="./assets/css/custom-style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <style>
+      .header__area {
+        background: #f2f6ff;
+        min-height: 150px;
+      }
+      .inner_body_area {
+        padding-bottom: 0px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header Area Start -->
+    <header class="header__area">
+      <div class="header__sticky">
+        <div class="container">
+          <div class="header__area-menubar">
+            <div class="header__area-menubar-left">
+              <div class="header__area-menubar-left-logo">
+                <a href="index.html"
+                  ><img class="dark-n" src="./assets/images/logo.svg" alt=""
+                /></a>
+              </div>
+            </div>
+<span class="clicknav" onclick="openNav()">&#9776;</span>
+            <div class="header__area-menubar-center">
+              <div class="header__area-menubar-center-menu menu-responsive">
+                <ul id="mobilemenu">
+                  <li><a href="index.html">Home </a></li>
+                  <li>
+                    <a href="shop.html">Shop Now </a>
+                  </li>
+                  <li class="active">
+                    <a href="about-us.html">About Us </a>
+                  </li>
+                  <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="header__area-menubar-right">
+              <div class="header__area-menubar-right-box">
+                <div class="header__area-menubar-right-box-btn">
+                  <a
+                    href="cart.html"
+                    class="btn btn-outline-primary position-relative cart_icon"
+                  >
+                    <i class="fa fa-shopping-cart fs-5"></i>
+                     <span
+                      id="cart-count"
+                      class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                      >0</span
+                    >
+                  </a>
+                  <a class="btn-one" href="shop.html"
+                    >Make It Yours<i class="fas fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="responsive-menu_popup-icon sidebar-menu-show-hide">
+                <i class="fas fa-bars"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="shop.html">Shop Now</a>
+  <a href="about-us.html">About Us</a>
+  <a href="contact-us.html">Contact Us</a>
+</div>
+    </header>
+    <!-- Header Area End -->
+
+    <main class="inner_body_area">
+      <!-- About Us start -->
+      <section class="abt_area">
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col-12 col-md-10 col-lg-8 col-xl-12 col-xxl-12">
+              <h2 class="mb-4 display-5 text-center">About Us</h2>
+              <p class="text-secondary mb-5 text-center lead fs-4">
+                At Printbe, we're passionate about turning your ideas into
+                wearable art.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container my-5">
+          <div class="row gy-4 gy-lg-0 align-items-lg-center">
+            <div class="col-12 col-lg-6">
+              <img
+                class="img-fluid rounded"
+                loading="lazy"
+                src="./assets/images/home-11.png"
+                alt="About Us"
+              />
+            </div>
+            <div class="col-12 col-lg-6 col-xxl-6">
+              <div
+                class="row justify-content-lg-end justify-content-xxl-around"
+              >
+                <div class="col-12 col-lg-11 col-xxl-10">
+                  <div class="card border-0 mb-4">
+                    <div class="card-body p-0">
+                      <p>
+                        Whether it's a bold statement, a personalized gift, or
+                        team apparel, we bring creativity to life with
+                        high-quality custom T-shirts.
+                      </p>
+                      <br />
+                      <ul class="list-unstyled m-0 p-0 d-sm-flex flex-sm-wrap">
+                        <li
+                          class="py-1 d-flex align-items-center gap-2 col-sm-6 w-100"
+                        >
+                          <span class="text-primary">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              fill="currentColor"
+                              class="bi bi-check-all"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486z"
+                              />
+                            </svg>
+                          </span>
+                          <span
+                            >Custom T-Shirt Printing (Text, Graphics, and
+                            Logos)</span
+                          >
+                        </li>
+                        <li
+                          class="py-1 d-flex align-items-center gap-2 col-sm-6 w-100"
+                        >
+                          <span class="text-primary">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              fill="currentColor"
+                              class="bi bi-check-all"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486z"
+                              />
+                            </svg>
+                          </span>
+                          <span
+                            >Bulk Orders for Events, Teams, and Businesses</span
+                          >
+                        </li>
+                        <li
+                          class="py-1 d-flex align-items-center gap-2 col-sm-6 w-100"
+                        >
+                          <span class="text-primary">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              fill="currentColor"
+                              class="bi bi-check-all"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486z"
+                              />
+                            </svg>
+                          </span>
+                          <span
+                            >Personalized Gifts and One-of-a-Kind Designs</span
+                          >
+                        </li>
+                        <li
+                          class="py-1 d-flex align-items-center gap-2 col-sm-6 w-100"
+                        >
+                          <span class="text-primary">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              fill="currentColor"
+                              class="bi bi-check-all"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486z"
+                              />
+                            </svg>
+                          </span>
+                          <span
+                            >High-Quality Fabric with Eco-Friendly Inks</span
+                          >
+                        </li>
+                        <li
+                          class="py-1 d-flex align-items-center gap-2 col-sm-6 w-100"
+                        >
+                          <span class="text-primary">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              fill="currentColor"
+                              class="bi bi-check-all"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486z"
+                              />
+                            </svg>
+                          </span>
+                          <span>Fast Turnaround & Worldwide Shipping</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <a href="shop.html" class="btn-one">
+                    Explore
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      fill="currentColor"
+                      class="bi bi-arrow-right-short"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About Us end -->
+
+      <!-- partner slider strip start -->
+      <div class="horizontal-scroll blue_bg">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="horizontal-scroll-slider">
+              <div class="horizontal-scroll-single-item">
+                <div class="horizontal-scroll-icon">
+                  <i class="fas fa-star"></i>
+                </div>
+                <h3>Free delivery worldwide</h3>
+                <div class="horizontal-scroll-icon">
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <div class="horizontal-scroll-single-item">
+                <div class="horizontal-scroll-icon">
+                  <i class="fas fa-star"></i>
+                </div>
+                <h3>30 day online returns</h3>
+                <div class="horizontal-scroll-icon">
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <div class="horizontal-scroll-single-item">
+                <div class="horizontal-scroll-icon">
+                  <i class="fas fa-star"></i>
+                </div>
+                <h3>Top-notch support</h3>
+                <div class="horizontal-scroll-icon">
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <div class="horizontal-scroll-single-item">
+                <div class="horizontal-scroll-icon">
+                  <i class="fas fa-star"></i>
+                </div>
+                <h3>Low price guarantee</h3>
+                <div class="horizontal-scroll-icon">
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <div class="horizontal-scroll-single-item">
+                <div class="horizontal-scroll-icon">
+                  <i class="fas fa-star"></i>
+                </div>
+                <h3>Free delivery worldwide</h3>
+                <div class="horizontal-scroll-icon">
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <div class="horizontal-scroll-single-item">
+                <div class="horizontal-scroll-icon">
+                  <i class="fas fa-star"></i>
+                </div>
+                <h3>30 day online returns</h3>
+                <div class="horizontal-scroll-icon">
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <div class="horizontal-scroll-single-item">
+                <div class="horizontal-scroll-icon">
+                  <i class="fas fa-star"></i>
+                </div>
+                <h3>Top-notch support</h3>
+                <div class="horizontal-scroll-icon">
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <div class="horizontal-scroll-single-item">
+                <div class="horizontal-scroll-icon">
+                  <i class="fas fa-star"></i>
+                </div>
+                <h3>Low price guarantee</h3>
+                <div class="horizontal-scroll-icon">
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- partner slider strip end -->
+      <!-- Subscribe section Start -->
+      <section class="subscribe">
+        <div
+          class="subscribe__one"
+          style="background-image: url('assets/images/subscribe-bg1.jpg')"
+        >
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-xl-7 col-lg-8">
+                <div class="subscribe__one-title text-center">
+                  <h2>
+                    What you wear should <span> speak before you do.</span>
+                  </h2>
+                  <a
+                    href="contact-us.html"
+                    class="btn-one mx-auto d-table mt-5"
+                  >
+                    Connect with Us
+                    <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Subscribe section End -->
+    </main>
+    <!-- Footer Start -->
+    <!-- Footer Start -->
+    <footer>
+      <div class="footer__one">
+        <div class="container">
+          <div class="footer-wrapper">
+            <!-- About Section -->
+            <div class="footer__one-widget">
+              <div class="footer__one-widget-about">
+                <a href="index.html"
+                  ><img src="assets/images/logo.svg" alt="Printbe Logo"
+                /></a>
+                <p>
+                  At Your TeeBrand, we specialize in high-quality custom
+                  t-shirts designed to help you stand out.
+                </p>
+                <div class="social">
+                  <a href="https://facebook.com" target="_blank"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a href="https://x.com" target="_blank"
+                    ><i class="fa-brands fa-x-twitter"></i
+                  ></a>
+                  <a href="https://behance.net" target="_blank"
+                    ><i class="fab fa-behance"></i
+                  ></a>
+                  <a href="https://linkedin.com" target="_blank"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Services -->
+            <div class="footer__one-widget">
+              <h5>Our Services</h5>
+              <div class="footer__one-widget-solution">
+                <ul>
+                  <li><a href="shop.html">Men's T-Shirts</a></li>
+                  <li><a href="shop.html">Women's T-Shirts</a></li>
+                  <li><a href="shop.html">Custom Orders</a></li>
+                  <li><a href="shop.html">New Arrivals</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer__one-widget">
+              <h5>Quick Links</h5>
+              <div class="footer__one-widget-solution">
+                <ul>
+                  <li><a href="about-us.html">About Us</a></li>
+                  <li><a href="shop.html">Shop Now</a></li>
+                  <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer__one-widget">
+              <h5>Contact Us</h5>
+              <div class="footer__one-widget-contact-info">
+                <div class="footer__one-widget-contact-info-item">
+                  <div class="footer__one-widget-contact-info-item-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div class="footer__one-widget-contact-info-item-txt">
+                    <span>Email</span>
+                    <a href="mailto:hello@printbe.design"
+                      >hello@printbe.design</a
+                    >
+                  </div>
+                </div>
+                <div class="footer__one-widget-contact-info-item">
+                  <div class="footer__one-widget-contact-info-item-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div class="footer__one-widget-contact-info-item-txt">
+                    <span>Address</span>
+                    <p>101 Creative Avenue, Design City, CA 90001</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright__one">
+          <div class="container">
+            <div
+              class="row justify-content-center copyright__one-container-area"
+            >
+              <div class="copyright__one-left text-center">
+                <p>© 2025 Printbe. All rights reserved.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+    <!-- Footer End -->
+
+    <!-- JS -->
+ <script src="assets/js/jquery-3.7.1.min.js"></script>
+<script src="assets/js/gsap.min.js"></script>
+<script src="assets/js/ScrollTrigger.min.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/slick.min.js"></script>
+<script src="assets/js/custom.js"></script>
+<script>
+   function getCart() {
+      try {
+      const cart = JSON.parse(localStorage.getItem("cart"));
+      if (Array.isArray(cart)) return cart;
+      } catch {}
+      return [];
+      }
+
+      function updateCartCount() {
+      const cart = getCart();
+      const totalCount = cart.reduce((sum, item) => sum + item.qty, 0);
+      const cartCountEl = document.getElementById("cart-count");
+      if (cartCountEl) cartCountEl.textContent = totalCount;
+      }
+
+      // Update cart count on page load
+      window.addEventListener("DOMContentLoaded", updateCartCount);
+      function addToCart(plan, price, selectId) {
+        const qty = document.getElementById(selectId).value;
+        const order = {
+          plan,
+          price,
+          qty,
+        };
+        localStorage.setItem("cart", JSON.stringify(order));
+        window.location.href = "cart.html";
+      }
+</script>
+  </body>
+</html>
